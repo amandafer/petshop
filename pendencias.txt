@@ -1,0 +1,10 @@
+Clientes:
+->No modal Adicionar, ao selecionar o tipo, deve ser passado, através do PHP, o valor 1 ou 0
+
+Login:
+->Telefone não é inserido
+
+Funcionários:
+->Função para o botão "Adicionar"
+->Ao clicar no botão "Finalizar", tem como fazer um refresh apenas na página carregada via ajax? ou um refresh apenas no form?
+->Hotel, para listar os animais que estão no hotel, o combo box deve funcionar, selecionando o tipo de animal

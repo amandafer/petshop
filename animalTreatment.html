@@ -1,0 +1,76 @@
+<body>
+	<h1>Animais</h1>
+	<div id="animalTreatment">
+		<table class="table table-striped">
+			<thead>
+			  <tr>
+				<th>#</th>
+				<th>Pet Name</th>
+				<th>Client Name</th>
+				<th>Time Start</th>
+				<th>Time End</th>
+				<th>Service</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>1</td>
+				<td>Toto</td>
+				<td>Mark</td>
+				<td class="time">
+					<input id="setTimeExample" type="text" class="time ui-timepicker-input" autocomplete="off">
+				</td>
+				<td class="time">
+					<input id="setTimeExample2" type="text" class="time ui-timepicker-input" autocomplete="off">
+				</td>
+				<td>Tosa</td>
+				<td><input type="checkbox"></td>
+			  </tr>
+			  <tr>
+				<td>2</td>
+				<td>Duque</td>
+				<td>Jacob</td>
+				<td class="time">
+					<input id="setTimeExample" type="text" class="time ui-timepicker-input" autocomplete="off">
+				</td>
+				<td class="time">
+					<input id="setTimeExample" type="text" class="time ui-timepicker-input" autocomplete="off">
+				</td>
+				<td>Banho</td>
+				<td><input type="checkbox"></td>
+			  </tr>
+			  <tr>
+				<td>3</td>
+				<td>Mingau</td>
+				<td>Larry</td>
+				<td class="time">
+					<input id="setTimeExample" type="text" class="time ui-timepicker-input" autocomplete="off">
+				</td>
+				<td class="time">
+					<input id="setTimeExample" type="text" class="time ui-timepicker-input" autocomplete="off">
+				</td>
+				<td>Hotel</td>
+				<td><input type="checkbox"></td>
+			  </tr>
+			</tbody>
+		</table>
+		<button class="btn" type="button">Adicionar</button>
+		<button class="btn btn-primary" type="button">Finalizar</button>
+	</div>
+	<script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+	<script type="text/javascript" src="../src/js/jquery-1.10.1.js"></script>
+	<script type="text/javascript" src="src/js/jquery.timepicker.js"></script>
+	<script>
+	  $(function() {
+		$('#setTimeExample').timepicker();
+		$('#setTimeExample').on('click', function (){
+		  $('#setTimeExample').timepicker('setTime', new Date());
+		});
+		
+		$('#setTimeExample2').timepicker();
+		$('#setTimeExample2').on('click', function (){
+		  $('#setTimeExample2').timepicker('setTime', new Date());
+		});
+	  });
+	</script>
+</body>
